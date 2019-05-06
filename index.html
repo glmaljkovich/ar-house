@@ -10,17 +10,42 @@
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
         <a-assets>
-          <img id="image1" src="images/1.jpg">
-          <img id="image2" src="images/2.jpg">
+          <img id="image3" src="images/3.jpg">
+          <img id="image4" src="images/4.jpg">
+          <img id="image5" src="images/5.jpg">
+          <img id="image6" src="images/6.jpg">
+          <img id="image7" src="images/7.jpg">
+          <img id="image8" src="images/8.jpg">
+          <img id="image9" src="images/9.jpg">
         </a-assets>
 
-        <a-marker type='barcode' value="7" smooth="true">
+        <a-marker type='barcode' value="3" smooth="true">
             <!-- Using the asset management system. -->
-            <a-image src="#image2" position="0 0 0" rotation="-90 0 0" scale="3 3 3"></a-image>
+            <a-image src="#image3" position="0 0 0" rotation="-90 0 0" scale="3 3 3"></a-image>
+        </a-marker>
+        <a-marker type='barcode' value="4" smooth="true">
+            <!-- Using the asset management system. -->
+            <a-image src="#image4" scale="3 3 3" rotation="-90 0 0"></a-image>
+        </a-marker>
+        <a-marker type='barcode' value="5" smooth="true">
+            <!-- Using the asset management system. -->
+            <a-image src="#image5" scale="3 3 3" rotation="-90 0 0"></a-image>
         </a-marker>
         <a-marker type='barcode' value="6" smooth="true">
             <!-- Using the asset management system. -->
-            <a-image id="uno" src="#image1" scale="3 3 3" rotation="-90 0 0"></a-image>
+            <a-image src="#image6" scale="3 3 3" rotation="-90 0 0"></a-image>
+        </a-marker>
+        <a-marker type='barcode' value="7" smooth="true">
+            <!-- Using the asset management system. -->
+            <a-image src="#image7" scale="3 3 3" rotation="-90 0 0"></a-image>
+        </a-marker>
+        <a-marker type='barcode' value="8" smooth="true">
+            <!-- Using the asset management system. -->
+            <a-image src="#image8" scale="3 3 3" rotation="-90 0 0"></a-image>
+        </a-marker>
+        <a-marker type='barcode' value="9" smooth="true">
+          <!-- Using the asset management system. -->
+          <a-image src="#image9" scale="3 3 3" rotation="-90 0 0"></a-image>
         </a-marker>
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
